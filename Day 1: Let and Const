@@ -1,22 +1,9 @@
 function main() {
    
-    const PI = Math.PI;
-// ES5 syntax
-function getAreaES5(r) {
-    let area;
-    area = PI * Math.pow(r, 2);
-    return area;
-}
-function getPerimeterES5(r) {
-    let perimeter;
-    perimeter = 2 * PI * r;
-    return perimeter;
-}
+    let r = readLine();
+const PI = Math.PI;
 
-// ES6 syntax
-const getAreaES6 = (r) => PI * Math.pow(r, 2);
-const getPerimeterES6 = (r) => 2 * PI * r;
-
-
-console.log(getAreaES5(2.6)); 
-console.log(getPerimeterES5(2.6));
+// Print the area of the circle:
+console.log(PI*r*r);
+// Print the perimeter of the circle:
+console.log(PI*2*r);
